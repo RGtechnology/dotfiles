@@ -14,6 +14,7 @@ To install these dotfiles, follow these steps:
 1. **Clone the repository:**
 
     ```sh
+    cd ~
     git clone https://github.com/RGtechnology/dotfiles.git
     cd dotfiles
     ```
