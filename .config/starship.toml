@@ -5,7 +5,7 @@ command_timeout = 2000
 
 # Change the default prompt format
 format = """\
-[╭╴](238)$os$username$hostname$shell$directory$terraform$python$git_branch $git_status
+[╭╴](238)$os$username$hostname$shell$directory$python$terraform$kubernetes$git_branch $git_status
 [╰─](238)$character"""
 
 # Drop ugly default prompt characters
@@ -94,6 +94,14 @@ disabled = false
 
 [terraform]
 format = '[󱁢 $version $workspace]($style) '
+disabled = false
+
+# ---
+
+# Show kubernetes context and namespace
+[kubernetes]
+format = '[󱃾 $context\($namespace\)](bold purple) '
+detect_extensions = ['yaml']
 disabled = false
 
 # ---
